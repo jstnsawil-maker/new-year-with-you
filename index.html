@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>A New Year with YOU</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, #fbeaea, #fff);
+        font-family: 'Georgia', serif;
+        color: #4a2c2a;
+        text-align: center;
+    }
+
+    .container {
+        max-width: 700px;
+        margin: auto;
+        padding: 40px 25px 80px;
+    }
+
+    h1 {
+        font-size: 2.4em;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+    }
+
+    .start-btn {
+        background: #c97c7c;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        font-size: 1em;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .start-btn:hover {
+        background: #b56a6a;
+    }
+
+    .letter {
+        display: none;
+        margin-top: 40px;
+        text-align: left;
+        line-height: 1.8;
+        font-size: 1.05em;
+        animation: fadeIn 2s ease forwards;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+        margin-top: 50px;
+        font-style: italic;
+        text-align: center;
+        opacity: 0.7;
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+
+    <h1>A New Year with YOU</h1>
+
+    <button class="start-btn" onclick="startExperience()">Tap to Begin</button>
+
+    <div class="letter" id="letter">
+        <p>I am so deeply thankful that we welcomed the New Year together. Here we are 2026. A new year, a new chapter, a new life unfolding before us, and new challenges waiting to be faced.</p>
+
+        <p>What makes everything beautiful is knowing that we face them together. Together, we conquer every challenge. Together, we choose to grow. Together, we make this year better than the last, and together, we turn this life into something truly amazing.</p>
+
+        <p>Life with you has been greater than I ever imagined it could be. Loving you feels natural, effortless, and real. I feel incredibly happy and blessed because I was given the chance to love you, to choose you every day, and to walk beside you in this life.</p>
+
+        <p>And I want you to know this clearly, I will never get tired of loving you. Not today, not tomorrow, not ever. Loving you is not something I do out of obligation—it’s something my heart does willingly, endlessly, and with joy.</p>
+
+        <p>Even though our time together this year may be short, my gratitude remains endless. I am thankful for every moment, every conversation, every laugh, and even the quiet moments where it’s just us existing together.</p>
+
+        <p>I am thankful because I was given the chance to love you deeply and to work toward giving you a better life—not just materially, but emotionally, mentally, and spiritually. A life where you feel safe, cherished, understood, and loved without conditions.</p>
+
+        <p>And even when we have to be apart, my love does not weaken—it becomes stronger. I will love you in the way you deserve, in the way that makes you feel seen and secure.</p>
+
+        <p>Distance means nothing to me because love is not measured by proximity—it is measured by effort, consistency, and intention.</p>
+
+        <p>I will make you feel that it has never been about the distance, but always about the love. The love that reaches you even when I cannot physically hold you. The love that reminds you that you are never alone.</p>
+
+        <p>I always look forward to our future. Sometimes I catch myself dreaming too far ahead, imagining moments that haven’t happened yet—but they feel so real.</p>
+
+        <p>I see you walking down the aisle in a white dress, radiant, beautiful, and calm, with that smile that always takes my breath away. I see us choosing each other in front of everyone, promising forever—not because life will be perfect, but because our love is worth fighting for.</p>
+
+        <p>I see a life filled with shared dreams, quiet mornings, hard days we survive together, and victories we celebrate side by side.</p>
+
+        <p>And with that, 2026 begins with hope in my heart, love in my hands, and you in my future.</p>
+
+        <p>This year, I choose you again. I choose patience, growth, understanding, and unconditional love. I choose to protect your heart, to support your dreams, and to stand beside you no matter what comes our way.</p>
+
+        <p>I step into this year believing in us, believing in what we are building, and believing that love—real love—always finds its way.</p>
+
+        <p>Thank you for being my love, my peace, and my reason to look forward to tomorrow.</p>
+
+        <p>I promise to love you with intention, sincerity, and consistency.</p>
+
+        <p>It’s always a beginning, and I am so excited to live this life with you.</p>
+
+        <footer>— Always yours</footer>
+    </div>
+
+    <!-- Hidden YouTube Player -->
+    <iframe id="music" width="0" height="0"
+        src=""
+        frameborder="0"
+        allow="autoplay">
+    </iframe>
+
+</div>
+
+<script>
+function startExperience() {
+    document.getElementById("letter").style.display = "block";
+
+    // Chorus starts around ~1:05 (adjustable)
+    document.getElementById("music").src =
+        "https://www.youtube.com/embed/FpJxPzveHzA?start=65&autoplay=1";
+
+    document.querySelector(".start-btn").style.display = "none";
+}
+</script>
+
+</body>
+</html>
